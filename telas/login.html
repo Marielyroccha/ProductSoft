@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ProductSoft | Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/cadastra_cliente.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+</head>
+<body>
+    <header class="cabecalho container">
+        <a href="./login.html">
+            <img src="../assets/img/logo.jpg" alt="Logo empresa" class="cabecalho__logo">
+        </a>
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="./login.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Login</h1>
+            <form class="flex flex--coluna" id="register-form" required data-form>
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="text" placeholder="e-mail" required data-email>
+                    <label class="input-label" for="email">E-mail</label>
+                </div>
+                <div class="input-container">
+                    <input name="senha" id="senha" class="input" type="password" placeholder="senha" required data-senha>
+                    <label class="input-label" for="senha">Senha</label><br>
+                    <span class="msg"></span>
+                </div>
+                <button type="submit" class="botao">Entrar</button>
+                <a type="button"class="botao"  href="./cadastra_usuario_login.html">Cadastrar</a>
+            </form>
+        </section>
+    </main>
+    <script src="../controller/login-controller.js" type="module"></script>
+</body>
+
+</html>
